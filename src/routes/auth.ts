@@ -28,7 +28,7 @@ auth.post('/login', zValidator('json', UserLoginSchema), async (c) => {
   const { email, password } = c.req.valid('json');
   const targetUser = await findOneByEmail(email);
   if (!targetUser) throw new HTTPException(404);
-  const isMatch = await Bun.password.verify(password, targetUser?.hash as string);
+  const isMatch = await Bun.password.verify(password, targetUser?.hash);
   if (!isMatch) throw new HTTPException(401);
   const payload = {
     sub: email,

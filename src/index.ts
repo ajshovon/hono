@@ -45,7 +45,7 @@ app.use(csrf({ origin: 'example.com' }));
 // JWT Middleware
 app.use('/private/*', (c, next) => {
   const jwtMiddleware = jwt({
-    secret: JWT_SECRET as string,
+    secret: JWT_SECRET,
   });
   return jwtMiddleware(c, next);
 });

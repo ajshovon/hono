@@ -7,7 +7,7 @@
   },
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
-  "cSpell.words": ["hono", "openapi", "Typenspeed"],
+  "cSpell.words": ["bunx", "hono", "openapi", "Typenspeed"],
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
   "prettier.singleQuote": true,

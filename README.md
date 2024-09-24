@@ -1,4 +1,4 @@
-### Hono test api with bun
+# Hono test api with bun
 
 To install dependencies:
 
@@ -17,4 +17,4 @@ bunx prisma migrate dev --name init
 bun run dev
 ```
 
-open <http://localhost:3000>
+open <http://localhost:3000/api>
